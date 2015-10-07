@@ -20,7 +20,7 @@ It this stage we are seeking your testing and feedback on the first version of t
 5. Select desired plugin options and preview as necessary
 6. Ok
 
-### Reading File Saved via Plugin
+### Reading Files Saved via Plugin
 1. Open As
 2. Select XXX Plugin as type (to the right of "File name" field)
 3. Select file
