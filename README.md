@@ -10,9 +10,9 @@ It this stage we are seeking your testing and feedback on the first version of t
 * D:\Program Files\Adobe Photoshop CC 2014\Required\Plug-Ins\File Formats
 * D:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Plug-ins\File Formats
 
-## Photoshop
+## Saving Files via Plugin
 ### Initiating Plugin "Save As"
-1. File Save As
+1. File > Save As
 2. Select "Save as type" XXX.DDS
 2. Navigate to store location
 3. Assign file name 
@@ -20,9 +20,11 @@ It this stage we are seeking your testing and feedback on the first version of t
 5. Select desired plugin options and preview as necessary
 6. Ok
 
-### Reading Files Saved via Plugin
-1. Open As
+### Loading Files Saved via Plugin
+1. File > Open As
 2. Select XXX Plugin as type (to the right of "File name" field)
 3. Select file
 4. Select desired mipmap loading options if applicable
 5. Select desired color profile loading options
+
+**NOTE:** Not all authoring apps can read the latest BCn textures. We're keeping a running list of app load status on the Wiki. To implement BCn texture compression in your own apps and engines [download the sample source code here](https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update)
