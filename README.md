@@ -1,4 +1,4 @@
-# ITW-Test
+# ITW-Beta-Test
 # Welcome to the Intel(R) Texture Works Beta Program
 It this stage we are seeking your testing and feedback on the first version of the plugin
 
