@@ -1,6 +1,6 @@
 # Intel&reg; Texture Works Plugin for Photoshop
 # Welcome to the  Beta Testing Program
-In this stage we are graciously seeking your time to test and provide feedback on the first version of the plugin in order to make sure everything works as it should and gets better if it needs to. With your help it should become a very useful tool for us all.
+In this stage we are graciously seeking your time to test and provide feedback on the first version of the plugin in order to make sure everything works as it should, and gets better where it needs to. With your help it should become a very useful tool for us all.
 
 ## Getting Started (Installation)
 1. Close Photoshop
