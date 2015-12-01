@@ -39,5 +39,5 @@ Use the [GitHub Issue tracking/labeling system](https://github.com/GameTechDev/I
 * The [FAQ](https://github.com/GameTechDev/ITW-Beta-Test/wiki/FAQ) is also available on the Wiki
 
 ```
-*
-``` Other names and brands may be claimed by their owners.
+* Other names and brands may be claimed by their owners.
+```
