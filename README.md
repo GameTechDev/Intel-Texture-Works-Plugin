@@ -17,13 +17,14 @@ It this stage we are seeking your testing and feedback on the first version of t
 1. File > Save As
 2. Select "Save as type" > **Intel&reg; Texture Works (\*.DDS;\*.DDS)**
 2. Navigate to store location
-3. Assign file name 
+3. Assign file name
 4. Save
 5. Select desired plugin options and preview (pan/zoom), as necessary
 6. Ok
 
 ### Loading Files Saved via Plugin
 Multiple DDS plugin formats can result in a texture display error on load. To avoid this, use the following process to load your saved BCn textures.
+
 1. File > Open As
 2. Select **Intel&reg; Texture Works (\*.DDS;\*.DDS)** as type (to the right of "File name" field)
 3. Select file
