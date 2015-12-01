@@ -6,8 +6,8 @@ In this stage we are graciously seeking your time to test and provide feedback o
 1. Close Photoshop
 2. Download the ITW-Beta-Test-master.zip file and expand it on your local computer
 3. Copy the desired plugin from either of the following unzipped folders
-	* ITW-Beta-Test-master\Plugins\x64\IntelTextureWorks.8bi 
-	* ITW-Beta-Test-master\Plugins\Win32\IntelTextureWorks.8bi
+	* .../ITW-Beta-Test-Beta1\Plugins\x64\IntelTextureWorks.8bi
+	* .../ITW-Beta-Test-Beta1\Plugins\Win32\IntelTextureWorks.8bi
 4. Paste the plugin into the appropriate Photoshop Plugin folder
 	* D:\Program Files\Adobe Photoshop CC 2014\Required\Plug-Ins\File Formats
 	* D:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Plug-ins\File Formats
