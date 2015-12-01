@@ -1,6 +1,6 @@
-# ITW-Beta-Test
-# Welcome to the Intel&reg; Texture Works Beta Program
-It this stage we are seeking your testing and feedback on the first version of the plugin
+# Intel&reg; Texture Works Plugin for Photoshop
+# Welcome to the  Beta Testing Program
+In this stage we are graciously seeking your time to test and provide feedback on the first version of the plugin in order to make sure everything works as it should and gets better if it needs to. With your help it should become a very useful tool for us all.
 
 ## Getting Started (Installation)
 1. Close Photoshop
@@ -23,7 +23,7 @@ It this stage we are seeking your testing and feedback on the first version of t
 6. Ok
 
 ### Loading Files Saved via Plugin
-Multiple DDS plugin formats can result in a texture display error on load. To avoid this, use the following process to load your saved BCn textures.
+Multiple resident DDS plugins can result in a texture display error on load. To avoid this, use the following process to reload textures saved with the Intel&reg; Texture Works plugin for Photoshop
 
 1. File > Open As
 2. Select **Intel&reg; Texture Works (\*.DDS;\*.DDS)** as type (to the right of "File name" field)
@@ -37,3 +37,4 @@ Use the [GitHub Issue tracking/labeling system](https://github.com/GameTechDev/I
 ### NOTE:
 * Not all authoring apps can read the latest BCn textures. We're keeping a running list of app load status on the [Wiki here](https://github.com/GameTechDev/ITW-Beta-Test/wiki/BCn-App-Support)
 * To implement BCn texture compression in your own apps and engines [download the sample source code here](https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update)
+* The FAQ is also available on the Wiki [here](https://github.com/GameTechDev/ITW-Beta-Test/wiki/FAQ)
