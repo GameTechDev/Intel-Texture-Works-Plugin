@@ -1,106 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Its-beta-test : Intel is working to extend Photoshop* to take advantage of the latest image compression methods (BCn/DXT) via plugin. The purpose of this plugin is to provide a tool for artists to access superior compression results at optimized compression speeds within Photoshop*.">
+    <title>Intel® Texture Works Plugin for Photoshop* by GameTechDev</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Its-beta-test</title>
   </head>
-
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/GameTechDev/ITW-Beta-Test">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/GameTechDev/ITW-Beta-Test/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/GameTechDev/ITW-Beta-Test/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jawilli312/ITS-Beta-Test">View on GitHub</a>
+    <div class="wrapper">
 
-          <h1 id="project_title">Its-beta-test</h1>
-          <h2 id="project_tagline">Intel is working to extend Photoshop* to take advantage of the latest image compression methods (BCn/DXT) via plugin. The purpose of this plugin is to provide a tool for artists to access superior compression results at optimized compression speeds within Photoshop*.</h2>
+      <section>
+        <div id="title">
+          <h1>Intel® Texture Works Plugin for Photoshop*</h1>
+          <p>Intel is working to extend Photoshop* to take advantage of the latest image compression methods (BCn/DXT) via plugin. The purpose of this plugin is to provide a tool for artists to access superior compression results at optimized compression speeds within Photoshop*.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/GameTechDev">GameTechDev</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/jawilli312/ITS-Beta-Test/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/jawilli312/ITS-Beta-Test/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
         <h1>
-<a id="welcome-to-the-xxx-beta-program" class="anchor" href="#welcome-to-the-xxx-beta-program" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the XXX Beta Program</h1>
+<a id="intel-texture-works-plugin-for-photoshop" class="anchor" href="#intel-texture-works-plugin-for-photoshop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intel® Texture Works Plugin for Photoshop</h1>
 
-<p>Thanks for signing up! It this stage we are seeking your testing and feedback on the first version of the plugin. See the <a href="https://github.com/jawilli312/ITS-Beta-Test/wiki">Wiki</a> for the plugin overview, FAQ, Known Issues, and How to implement optimized BCn texture compression in your own app.</p>
+<h1>
+<a id="welcome-to-the--beta-testing-program" class="anchor" href="#welcome-to-the--beta-testing-program" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the  Beta Testing Program</h1>
 
-<p>Before you get started, if you haven't already signed up, <a href="https://software.intel.com/photoshop-compression-plugin/beta">please do so here.</a>.</p>
-
-<h2>
-<a id="logging-bugs-feedback-and-feature-requests" class="anchor" href="#logging-bugs-feedback-and-feature-requests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logging Bugs, Feedback and Feature Requests</h2>
-
-<p>Please use the following tags in your subjects when posting <a href="https://github.com/jawilli312/ITS-Beta-Test/issues">issues here</a></p>
-
-<ul>
-<li>[BUG]: For things that don't work correctly</li>
-<li>[FEATURE]: For feature requests</li>
-<li>[FEEDBACK]: For general comments on the plugin, its usefulness (or not)</li>
-</ul>
+<p>In this stage we are graciously seeking your time to test and provide feedback on the first version of the plugin in order to make sure everything works as it should and gets better if it needs to. With your help it should become a very useful tool for us all.</p>
 
 <h2>
 <a id="getting-started-installation" class="anchor" href="#getting-started-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started (Installation)</h2>
 
 <ol>
 <li>Close Photoshop</li>
-<li>Download the XXX.zip file and expand it on your local computer</li>
-<li>Copy the desired plugin file the XXX.8bi plugin file located in either XXX\Plugins\x64\ or XXX\Plugins\Win32\</li>
-<li>Paste the plugin into the appropriate Photoshop Plugin folder</li>
+<li>Download the IntelTextureWorks-beta1.zip file and expand it on your local computer</li>
+<li>Copy the desired plugin from either of the following unzipped folders
+
+<ul>
+<li>IntelTextureWorks-beta1\Plugins\x64\IntelTextureWorks.8bi </li>
+<li>IntelTextureWorks-beta1\Plugins\Win32\IntelTextureWorks.8bi</li>
+</ul>
+</li>
+<li>Paste the plugin into the appropriate Photoshop Plugin folder
+
+<ul>
 <li>D:\Program Files\Adobe Photoshop CC 2014\Required\Plug-Ins\File Formats</li>
 <li>D:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Plug-ins\File Formats</li>
+</ul>
+</li>
 </ol>
 
 <h2>
-<a id="in-photoshop" class="anchor" href="#in-photoshop" aria-hidden="true"><span class="octicon octicon-link"></span></a>In Photoshop</h2>
+<a id="saving-files-via-plugin" class="anchor" href="#saving-files-via-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saving Files via Plugin</h2>
 
 <h3>
 <a id="initiating-plugin-save-as" class="anchor" href="#initiating-plugin-save-as" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initiating Plugin "Save As"</h3>
 
 <ol>
-<li>File Save As</li>
-<li>Select "Save as type" XXX.DDS</li>
+<li>File &gt; Save As</li>
+<li>Select "Save as type" &gt; <strong>Intel® Texture Works (*.DDS;*.DDS)</strong>
+</li>
 <li>Navigate to store location</li>
-<li>Assign file name </li>
+<li>Assign file name</li>
 <li>Save</li>
-<li>Select desired plugin options and preview as necessary</li>
+<li>Select desired plugin options and preview (pan/zoom), as necessary</li>
 <li>Ok</li>
 </ol>
 
 <h3>
-<a id="reading-file-saved-via-plugin" class="anchor" href="#reading-file-saved-via-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reading File Saved via Plugin</h3>
+<a id="loading-files-saved-via-plugin" class="anchor" href="#loading-files-saved-via-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loading Files Saved via Plugin</h3>
+
+<p>Multiple resident DDS plugins can result in a texture display error on load. To avoid this, use the following process to reload textures saved with the Intel® Texture Works plugin for Photoshop</p>
 
 <ol>
-<li>Open As</li>
-<li>Select XXX Plugin as type (to the right of "File name" field)</li>
+<li>File &gt; Open As</li>
+<li>Select <strong>Intel® Texture Works (*.DDS;*.DDS)</strong> as type (to the right of "File name" field)</li>
 <li>Select file</li>
 <li>Select desired mipmap loading options if applicable</li>
 <li>Select desired color profile loading options</li>
 </ol>
 
-<p>NOTE: Not all authoring apps can read the latest BCn textures. We're keeping a running list of app load status on the Wiki. To implement BCn texture compression in your own apps and engines <a href="https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update">download the sample source code here</a></p>
+<h3>
+<a id="logging-bugs-enhancements--feedback" class="anchor" href="#logging-bugs-enhancements--feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logging Bugs, Enhancements, &amp; Feedback</h3>
+
+<p>Use the <a href="https://github.com/GameTechDev/ITW-Beta-Test/issues">GitHub Issue tracking/labeling system</a> to log your bugs, enhancement (requests), and feedback (general impressions appreciated). <strong>Labels really help here - please use them</strong>.</p>
+
+<h3>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTE:</h3>
+
+<ul>
+<li>Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki <a href="https://github.com/GameTechDev/ITW-Beta-Test/wiki/BCn-App-Support">here</a>
+</li>
+<li>To implement BCn texture compression in your own apps and engines <a href="https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update">download the sample source code here</a>
+</li>
+<li>The <a href="https://github.com/GameTechDev/ITW-Beta-Test/wiki/FAQ">FAQ</a> is also available on the Wiki</li>
+</ul>
       </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Its-beta-test maintained by <a href="https://github.com/jawilli312">jawilli312</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-
   </body>
 </html>
