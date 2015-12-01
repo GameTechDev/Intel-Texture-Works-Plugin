@@ -15,7 +15,7 @@ It this stage we are seeking your testing and feedback on the first version of t
 ## Saving Files via Plugin
 ### Initiating Plugin "Save As"
 1. File > Save As
-2. Select "Save as type" -> **Intel&reg; Texture Works (\*.DDS;\*.DDS)**
+2. Select "Save as type" > **Intel&reg; Texture Works (\*.DDS;\*.DDS)**
 2. Navigate to store location
 3. Assign file name 
 4. Save
@@ -31,7 +31,7 @@ Multiple DDS plugin formats can result in a texture display error on load. To av
 5. Select desired color profile loading options
 
 ### Logging Bugs, Enhancements, & Feedback
-Use the [GitHub Issue tracking/labeling system](https://github.com/GameTechDev/ITW-Beta-Test/issues) to log bugs, enhancement (requests), and feedback (general impressions appreciated). **Labels really help here - please use them**.
+Use the [GitHub Issue tracking/labeling system](https://github.com/GameTechDev/ITW-Beta-Test/issues) to log your bugs, enhancement (requests), and feedback (general impressions appreciated). **Labels really help here - please use them**.
 
 ### NOTE:
 * Not all authoring apps can read the latest BCn textures. We're keeping a running list of app load status on the [Wiki here](https://github.com/GameTechDev/ITW-Beta-Test/wiki/BCn-App-Support)
