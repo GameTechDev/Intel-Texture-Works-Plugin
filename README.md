@@ -10,7 +10,7 @@ In this stage we are graciously seeking your time to test and provide feedback o
 	* .../IntelTextureWorks-Beta1\Plugins\Win32\IntelTextureWorks.8bi
 4. Paste the plugin into the appropriate Photoshop Plugin folder
 	* D:\Program Files\Adobe Photoshop CC 2014\Required\Plug-Ins\File Formats
-	* D:\Program Files\Adobe\Adobe Photoshop CS5 (64 Bit)\Plug-ins\File Formats
+	* D:\Program Files\Adobe\Adobe Photoshop CS6 (64 Bit)\Plug-ins\File Formats
 
 ## Saving Files via Plugin
 1. File > Save As
