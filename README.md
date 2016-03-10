@@ -38,7 +38,7 @@ Multiple resident DDS plugins can result in a texture display error on load. To 
 Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/issues) to log your bugs, enhancement (requests), and feedback (general impressions appreciated). **Labels really help here - please use them**.
 
 ## NOTE:
-* Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki [here](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/issues/BCn-App-Support)
+* Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki [here](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/BCn-App-Support)
 * To implement BCn texture compression in your own apps and engines [download the sample source code here](https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update)
 * The [FAQ](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/wiki/FAQ) is also available on the Wiki
 
