@@ -1,6 +1,6 @@
 # Intel&reg; Texture Works Plugin for Photoshop
 
-# ++Pre-Compiled Binary++
+# Pre-Compiled Binary
 ## Getting Started (Installation)
 1. Close Photoshop
 2. Download the IntelTextureWorks_1.0.4.zip file and expand it on your local computer
@@ -52,7 +52,7 @@ Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Text
 * * *
 
 
-# ++Source Code++
+# Source Code
 ## Prerequisites ##
 
 - Visual Studio 2012 (or possibly higher, although so far all builds created with 2012)
