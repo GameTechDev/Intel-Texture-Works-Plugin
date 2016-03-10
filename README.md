@@ -42,7 +42,7 @@ Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Text
 * To implement BCn texture compression in your own apps and engines [download the sample source code here](https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update)
 * The [FAQ](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/wiki/FAQ) is also available on the Wiki
 
-## Beta Requirements
+## Requirements
 
 * Windows\* (32/64) versions 7, 8, 10
 * Photoshop\* CS6 through CC2015
