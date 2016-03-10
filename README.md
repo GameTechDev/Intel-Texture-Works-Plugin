@@ -1,4 +1,4 @@
-# Intel&reg; Texture Works Plugin for Photoshop
+# Intel&reg; Texture Works Plugin for Photoshop*
 
 # Pre-Compiled Binary
 ## Getting Started (Installation)
