@@ -20,8 +20,9 @@
   <body>
       <div id="header">
         <nav>
-          <li class="fork"><a href="https://github.com/GameTechDev/ITW-Beta-Test">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/GameTechDev/ITW-Beta-Test/releases/download/Beta01/IntelTextureWorks-Beta1.zip">ZIP</a></li>
+          <li class="fork"><a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin/tarball/master">TAR</a></li>
           <li class="title">DOWNLOADS</li>
         </nav>
       </div><!-- end header -->
@@ -31,28 +32,29 @@
       <section>
         <div id="title">
           <h1>Intel® Texture Works Plugin for Photoshop*</h1>
-          <p>Intel is working to extend Photoshop* to take advantage of the latest image compression methods (BCn/DXT) via plugin. The purpose of this plugin is to provide a tool for artists to access superior compression results at optimized compression speeds within Photoshop*.</p>
+          <p>Intel has extended Photoshop* to take advantage of the latest image compression methods (BCn/DXT) via plugin. The purpose of this plugin is to provide a tool for artists to access superior compression results at optimized compression speeds within Photoshop*.</p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/GameTechDev">GameTechDev</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
 
         <h1>
-<a id="welcome-to-the--beta-testing-program" class="anchor" href="#welcome-to-the--beta-testing-program" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the  Beta Testing Program</h1>
+<a id="intel-texture-works-plugin-for-photoshop" class="anchor" href="#intel-texture-works-plugin-for-photoshop" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Intel® Texture Works Plugin for Photoshop*</h1>
 
-<p>In this stage we are graciously seeking your time to test and provide feedback on the first version of the plugin in order to make sure everything works as it should and gets better if it needs to. With your help it should become a very useful tool for us all.</p>
+<h1>
+<a id="pre-compiled-binary" class="anchor" href="#pre-compiled-binary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pre-Compiled Binary</h1>
 
 <h2>
-<a id="getting-started-installation" class="anchor" href="#getting-started-installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started (Installation)</h2>
+<a id="getting-started-installation" class="anchor" href="#getting-started-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting Started (Installation)</h2>
 
 <ol>
 <li>Close Photoshop</li>
-<li>Download the ITW-Beta-Test-master.zip file and expand it on your local computer</li>
+<li>Download the IntelTextureWorks_1.0.4.zip file and expand it on your local computer</li>
 <li>Copy the desired plugin from either of the following unzipped folders
 
 <ul>
-<li>.../IntelTextureWorks-Beta1\Plugins\x64\IntelTextureWorks.8bi</li>
-<li>.../IntelTextureWorks-Beta1\Plugins\Win32\IntelTextureWorks.8bi</li>
+<li>.../IntelTextureWorks_1.0.4\Plugins\x64\IntelTextureWorks.8bi</li>
+<li>.../IntelTextureWorks_1.0.4\Plugins\Win32\IntelTextureWorks.8bi</li>
 </ul>
 </li>
 <li>Paste the plugin into the appropriate Photoshop Plugin folder
@@ -62,10 +64,23 @@
 <li>D:\Program Files\Adobe\Adobe Photoshop CS6 (64 Bit)\Plug-ins\File Formats</li>
 </ul>
 </li>
+<li>Copy the cubemap scripts from:
+
+<ul>
+<li>.../IntelTextureWorks_1.0.4\PhotoshopScripts\IntelTextureWorks-ConvertCubeMap.jsx</li>
+<li>.../IntelTextureWorks_1.0.4\PhotoshopScripts\IntelTextureWorks-CubeMapGaussianBlur.jsx</li>
+</ul>
+</li>
+<li>Paste the cubemap scripts into:
+
+<ul>
+<li>D:\Program Files\Adobe Photoshop CC 2014\Presets\Scripts</li>
+</ul>
+</li>
 </ol>
 
 <h2>
-<a id="saving-files-via-plugin" class="anchor" href="#saving-files-via-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Saving Files via Plugin</h2>
+<a id="saving-files-via-plugin" class="anchor" href="#saving-files-via-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Saving Files via Plugin</h2>
 
 <ol>
 <li>File &gt; Save As</li>
@@ -79,7 +94,7 @@
 </ol>
 
 <h2>
-<a id="loading-files-saved-via-plugin" class="anchor" href="#loading-files-saved-via-plugin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loading Files Saved via Plugin</h2>
+<a id="loading-files-saved-via-plugin" class="anchor" href="#loading-files-saved-via-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Loading Files Saved via Plugin</h2>
 
 <p>Multiple resident DDS plugins can result in a texture display error on load. To avoid this, use the following process to reload textures saved with the Intel® Texture Works plugin for Photoshop</p>
 
@@ -92,29 +107,72 @@
 </ol>
 
 <h2>
-<a id="logging-bugs-enhancements--feedback" class="anchor" href="#logging-bugs-enhancements--feedback" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logging Bugs, Enhancements, &amp; Feedback</h2>
+<a id="logging-bugs-enhancements--feedback" class="anchor" href="#logging-bugs-enhancements--feedback" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Logging Bugs, Enhancements, &amp; Feedback</h2>
 
-<p>Use the <a href="https://github.com/GameTechDev/ITW-Beta-Test/issues">GitHub Issue tracking/labeling system</a> to log your bugs, enhancement (requests), and feedback (general impressions appreciated). <strong>Labels really help here - please use them</strong>.</p>
+<p>Use the <a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin/issues">GitHub Issue Tracking System</a> to log your bugs, enhancement (requests), and feedback (general impressions appreciated). <strong>Labels really help here - please use them</strong>.</p>
 
 <h2>
-<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTE:</h2>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NOTE:</h2>
 
 <ul>
-<li>Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki <a href="https://github.com/GameTechDev/ITW-Beta-Test/wiki/BCn-App-Support">here</a>
+<li>Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki <a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin/wiki/BCn-App-Support">here</a>
 </li>
 <li>To implement BCn texture compression in your own apps and engines <a href="https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update">download the sample source code here</a>
 </li>
-<li>The <a href="https://github.com/GameTechDev/ITW-Beta-Test/wiki/FAQ">FAQ</a> is also available on the Wiki</li>
+<li>The <a href="https://github.com/GameTechDev/Intel-Texture-Works-Plugin/wiki/FAQ">FAQ</a> is also available on the Wiki</li>
 </ul>
 
 <h2>
-<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>Beta Requirements</h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
 
 <ul>
-<li>Windows* (32/64) versions 7, 8, 10
+<li>Windows* (32/64) versions 7, 8, 10</li>
+<li>Photoshop* CS6 through CC2015</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="source-code" class="anchor" href="#source-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source Code</h1>
+
+<h2>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<ul>
+<li>Visual Studio 2012 (or possibly higher, although so far all builds created with 2012)</li>
+<li>Photoshop CS6 SDK, can be obtained from here: <a href="http://www.adobe.com/devnet/photoshop/sdk.html">http://www.adobe.com/devnet/photoshop/sdk.html</a>
 </li>
-<li>Photoshop* CS6 through CC2015
-</li>
+<li>Adobe Photoshop 32 or 64 bit, CS6 or higher.</li>
+</ul>
+
+<h2>
+<a id="first-time-set-up" class="anchor" href="#first-time-set-up" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First time set-up</h2>
+
+<ul>
+<li>Install Photoshop CS6 SDK on developer machine</li>
+<li>Open IntelTextureTools solution </li>
+<li>Go to Property Manager and edit settings for Microsoft.Cpp.Win32.user and Microsoft.Cpp.x64.user, adding the following User Macro
+PHOTOSHOP_SDK_CS6 =  </li>
+<li>Choose platform appropriate to the version of Photoshop you wish to test with (Win32 or x64)</li>
+<li>Build! For convenience plugin binaries will be copied to "~/Plugins/[platform]" folder.</li>
+</ul>
+
+<h2>
+<a id="to-easily-rundebug-from-visual-studio" class="anchor" href="#to-easily-rundebug-from-visual-studio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To easily run/debug from Visual Studio</h2>
+
+<ul>
+<li>create an alias/shortcut to the appropriate platform folder and place it in the matching Photoshop Plug-ins folder (this will allow photoshop to load plugin from build location) </li>
+<li>in plugin project, select Properties-&gt;Configuration-&gt;Debugging-&gt;Target and browse to photoshop executable</li>
+</ul>
+
+<h2>
+<a id="3rd-party-code-" class="anchor" href="#3rd-party-code-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3rd Party code ##</h2>
+
+<p>This project utilizes the following code (located under 3rdParty folder)</p>
+
+<ul>
+<li>DirectXTex, from <a href="https://github.com/Microsoft/DirectXTex">https://github.com/Microsoft/DirectXTex</a> (Sourced from tag Jul2015)</li>
+<li>Intel, BC compression code and helpers </li>
 </ul>
 
 <pre><code>* Other names and brands may be claimed by their owners.
