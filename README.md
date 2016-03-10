@@ -1,6 +1,6 @@
 # Intel&reg; Texture Works Plugin for Photoshop
 
-
+# ++Pre-Compiled Binary++
 ## Getting Started (Installation)
 1. Close Photoshop
 2. Download the IntelTextureWorks_1.0.4.zip file and expand it on your local computer
@@ -46,6 +46,39 @@ Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Text
 
 * Windows\* (32/64) versions 7, 8, 10
 * Photoshop\* CS6 through CC2015
+
+
+
+* * *
+
+
+# ++Source Code++
+## Prerequisites ##
+
+- Visual Studio 2012 (or possibly higher, although so far all builds created with 2012)
+- Photoshop CS6 SDK, can be obtained from here: http://www.adobe.com/devnet/photoshop/sdk.html
+- Adobe Photoshop 32 or 64 bit, CS6 or higher.
+
+## First time set-up ##
+
+- Install Photoshop CS6 SDK on developer machine
+- Open IntelTextureTools solution 
+- Go to Property Manager and edit settings for Microsoft.Cpp.Win32.user and Microsoft.Cpp.x64.user, adding the following User Macro
+	PHOTOSHOP_SDK_CS6 = <full path to location of Photoshop CS6 SDK> 
+- Choose platform appropriate to the version of Photoshop you wish to test with (Win32 or x64)
+- Build! For convenience plugin binaries will be copied to "~/Plugins/[platform]" folder.
+
+## To easily run/debug from Visual Studio ##
+
+- create an alias/shortcut to the appropriate platform folder and place it in the matching Photoshop Plug-ins folder (this will allow photoshop to load plugin from build location) 
+- in plugin project, select Properties->Configuration->Debugging->Target and browse to photoshop executable
+
+## 3rd Party code ## 
+
+This project utilizes the following code (located under 3rdParty folder)
+- DirectXTex, from https://github.com/Microsoft/DirectXTex (Sourced from tag Jul2015)
+- Intel, BC compression code and helpers 
+
 
 ```
 * Other names and brands may be claimed by their owners.
