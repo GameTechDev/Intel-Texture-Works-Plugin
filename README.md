@@ -40,7 +40,7 @@ Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Text
 ## NOTE:
 * Not all authoring apps can read the latest BCn textures. We're keeping a running list of authoring app BCn load status on the Wiki [here](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/issues/BCn-App-Support)
 * To implement BCn texture compression in your own apps and engines [download the sample source code here](https://software.intel.com/en-us/articles/fast-ispc-texture-compressor-update)
-* The [FAQ](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/issues/wiki/FAQ) is also available on the Wiki
+* The [FAQ](https://github.com/GameTechDev/Intel-Texture-Works-Plugin/wiki/FAQ) is also available on the Wiki
 
 ## Beta Requirements
 
