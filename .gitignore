@@ -1,0 +1,33 @@
+
+# ignore these types
+
+*.cache
+*.log
+*.suo
+*.sdf
+*.opensdf
+*.pdb
+*.user
+*.tmp_proj
+*.bsc
+*.ilk
+
+# intel compiler generated
+*_ispc*.h
+
+#ignore these folders
+
+Debug/
+Release/
+bin/
+obj/
+ipch/
+	
+*.DS_Store
+
+*.pipl
+Plugins/
+*.dds
+*.aps
+*.zip
+*.tmp

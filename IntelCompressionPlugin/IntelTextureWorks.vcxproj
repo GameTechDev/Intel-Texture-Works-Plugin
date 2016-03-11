@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FAA37424-40A7-47F4-98CB-4B9464145B0D}</ProjectGuid>
+    <RootNamespace>IntelCompressionPlugin</RootNamespace>
+    <ProjectName>IntelTextureWorks</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.8bi</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.8bi</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.8bi</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.8bi</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(Intdir)Debug/Outbound.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /GS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\3rdParty\Intel\Source;..\3rdParty\DirectXTex\DirectXTex;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP;$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ALLOW_KEYWORD_MACROS=1;ISOLATION_AWARE_ENABLED=1;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;DEV_$(USERNAME);WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>md "$(SolutionDir)Plugins\$(Platform)"
+copy "$(TargetPath)" "$(SolutionDir)Plugins\$(Platform)\*"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if not defined PHOTOSHOP_SDK_CS6 ( 
+echo PHOTOSHOP_SDK_CS6 must be defined. See ReadMe for setup information
+exit 1
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>$(Intdir)Debug/Outbound.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /GS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\3rdParty\Intel\Source;..\3rdParty\DirectXTex\DirectXTex;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP;$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ALLOW_KEYWORD_MACROS=1;ISOLATION_AWARE_ENABLED=1;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;DEV_$(USERNAME);WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>md "$(SolutionDir)Plugins\$(Platform)"
+copy "$(TargetPath)" "$(SolutionDir)Plugins\$(Platform)\*"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if not defined PHOTOSHOP_SDK_CS6 ( 
+echo PHOTOSHOP_SDK_CS6 must be defined. See ReadMe for setup information
+exit 1
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(Intdir)Debug/Outbound.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /GS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\3rdParty\Intel\Source;..\3rdParty\DirectXTex\DirectXTex;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP;$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ALLOW_KEYWORD_MACROS=1;ISOLATION_AWARE_ENABLED=1;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;DEV_$(USERNAME);WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>md "$(SolutionDir)Plugins\$(Platform)"
+copy "$(TargetPath)" "$(SolutionDir)Plugins\$(Platform)\*"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if not defined PHOTOSHOP_SDK_CS6 ( 
+echo PHOTOSHOP_SDK_CS6 must be defined. See ReadMe for setup information
+exit 1
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>$(Intdir)Debug/Outbound.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/MP /GS %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\3rdParty\Intel\Source;..\3rdParty\DirectXTex\DirectXTex;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop;$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP;$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\includes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ALLOW_KEYWORD_MACROS=1;ISOLATION_AWARE_ENABLED=1;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;DEV_$(USERNAME);WIN32=1;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>md "$(SolutionDir)Plugins\$(Platform)"
+copy "$(TargetPath)" "$(SolutionDir)Plugins\$(Platform)\*"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if not defined PHOTOSHOP_SDK_CS6 ( 
+echo PHOTOSHOP_SDK_CS6 must be defined. See ReadMe for setup information
+exit 1
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\DialogUtilitiesWin.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\FileUtilities.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\FileUtilitiesWin.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIDLLInstance.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUSuites.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUtilities.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUtilitiesWin.cpp" />
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIWinUI.cpp" />
+    <ClCompile Include="..\3rdParty\Intel\Source\ispc_texcomp.cpp" />
+    <ClCompile Include="..\3rdParty\Intel\Source\win32Threads.cpp" />
+    <ClCompile Include="SaveOptionsDialog.cpp" />
+    <ClCompile Include="IntelPlugin.cpp" />
+    <ClCompile Include="IntelPluginUIWin.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</BrowseInformation>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BrowseInformation>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BrowseInformation>
+    </ClCompile>
+    <ClCompile Include="PreviewDialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntelPluginName.h" />
+    <ClInclude Include="..\3rdParty\Intel\Source\ispc_texcomp.h" />
+    <ClInclude Include="SaveOptionsDialog.h" />
+    <ClInclude Include="..\3rdParty\Intel\Source\win32Threads.h" />
+    <ClInclude Include="IntelPlugin.h" />
+    <ClInclude Include="IntelPluginUIWin.h" />
+    <ClInclude Include="PreviewDialog.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="IntelPlugin.r">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Compiling PiPL resource...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Compiling PiPL resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop   /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Resources     /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Resources    /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
+
+"$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\resources\Cnvtpipl.exe" "$(IntDir)%(Filename).rr" "%(Filename).pipl"
+
+del "$(IntDir)%(Filename).rr"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop   /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Resources     /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Resources    /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
+
+"$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\resources\Cnvtpipl.exe" "$(IntDir)%(Filename).rr" "%(Filename).pipl"
+
+del "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).pipl;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).pipl;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Compiling PiPL resource...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Compiling PiPL resource...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop   /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Resources     /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Resources    /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
+
+"$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\resources\Cnvtpipl.exe" "$(IntDir)%(Filename).rr" "%(Filename).pipl"
+
+del "$(IntDir)%(Filename).rr"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\PICA_SP /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Photoshop   /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\PhotoshopAPI\Resources     /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Resources    /I$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\Includes /EP /DMSWindows=1 /Tc"%(FullPath)" &gt;     "$(IntDir)%(Filename).rr"
+
+"$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\resources\Cnvtpipl.exe" "$(IntDir)%(Filename).rr" "%(Filename).pipl"
+
+del "$(IntDir)%(Filename).rr"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).pipl;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).pipl;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntelPlugin.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="kernel.ispc">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\3rdParty\Intel\Tools\ispc -O2 "%(Filename).ispc" -o "$(IntDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --arch=x86-64 --target=sse2,sse4,avx,avx2 --opt=fast-math</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\3rdParty\Intel\Tools\ispc -O2 "%(Filename).ispc" -o "$(IntDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --arch=x86-64 --target=sse2,sse4,avx,avx2 --opt=fast-math</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename).obj;$(IntDir)%(Filename)_sse2.obj;$(IntDir)%(Filename)_sse4.obj;$(IntDir)%(Filename)_avx.obj;$(IntDir)%(Filename)_avx2.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename).obj;$(IntDir)%(Filename)_sse2.obj;$(IntDir)%(Filename)_sse4.obj;$(IntDir)%(Filename)_avx.obj;$(IntDir)%(Filename)_avx2.obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\3rdParty\Intel\Tools\ispc -O2 "%(Filename).ispc" -o "$(IntDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --arch=x86 --target=sse2,sse4,avx,avx2 --opt=fast-math</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\3rdParty\Intel\Tools\ispc -O2 "%(Filename).ispc" -o "$(IntDir)%(Filename).obj" -h "$(ProjectDir)%(Filename)_ispc.h" --arch=x86 --target=sse2,sse4,avx,avx2 --opt=fast-math</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename).obj;$(IntDir)%(Filename)_sse2.obj;$(IntDir)%(Filename)_sse4.obj;$(IntDir)%(Filename)_avx.obj;$(IntDir)%(Filename)_avx2.obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename).obj;$(IntDir)%(Filename)_sse2.obj;$(IntDir)%(Filename)_sse4.obj;$(IntDir)%(Filename)_avx.obj;$(IntDir)%(Filename)_avx2.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="zoomin.ico" />
+    <Image Include="zoomout.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3rdParty\DirectXTex\DirectXTex\DirectXTex_Desktop_2012.vcxproj">
+      <Project>{371b9fa9-4c90-4ac6-a123-aced756d6c77}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

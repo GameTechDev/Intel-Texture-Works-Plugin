@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{81d03a0f-9d1f-46dd-96e0-69897c8513aa}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{975e039f-859d-47c7-ba81-3b597888543c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4b9a019f-f424-43e5-b946-e90e6484bc01}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="3rd Party">
+      <UniqueIdentifier>{e52f075d-7c14-4f4e-a040-b491da9d7c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd Party\Photoshop SDK">
+      <UniqueIdentifier>{9e5bf2b7-e988-41b3-b16f-de1570fba0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd Party\Intel">
+      <UniqueIdentifier>{4184a4d2-ab32-4c21-a69a-dac5104aeab0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IntelPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\DialogUtilitiesWin.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\FileUtilities.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\FileUtilitiesWin.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIDLLInstance.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUSuites.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUtilities.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIUtilitiesWin.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="$(PHOTOSHOP_SDK_CS6)\pluginsdk\samplecode\common\sources\PIWinUI.cpp">
+      <Filter>3rd Party\Photoshop SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\Intel\Source\ispc_texcomp.cpp">
+      <Filter>3rd Party\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\Intel\Source\win32Threads.cpp">
+      <Filter>3rd Party\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="IntelPluginUIWin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveOptionsDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntelPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntelPluginName.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\Intel\Source\win32Threads.h">
+      <Filter>3rd Party\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\Intel\Source\ispc_texcomp.h">
+      <Filter>3rd Party\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveOptionsDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntelPluginUIWin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="IntelPlugin.r">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="kernel.ispc">
+      <Filter>3rd Party\Intel</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="zoomin.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="zoomout.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntelPlugin.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

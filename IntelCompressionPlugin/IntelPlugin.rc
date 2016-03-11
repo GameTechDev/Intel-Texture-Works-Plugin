@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 287, 263
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Intel® Texture Works"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PRESET_COMBO,79,7,135,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TEXTURETYPE_COMBO,79,49,199,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMPRESSION_COMBO,79,89,199,71,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Export a specific mip level for Cube maps",IDC_CUBEMIPLEVEL_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,135,148,10
+    LTEXT           "Mip Level:",14,207,136,36,8
+    COMBOBOX        IDC_MIPLEVEL_COMBO,245,135,33,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Normalize",IDC_NORMALIZE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,175,46,10
+    CONTROL         "Flip Red (X)",IDC_FLIPX_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,175,53,10
+    CONTROL         "Flip Green (Y)",IDC_FLIPY_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,157,175,65,10
+    COMBOBOX        IDC_MIPMAP_COMBO,79,196,199,99,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Preview",IDC_PREVIEW_BUTTON,27,240,77,14
+    DEFPUSHBUTTON   "&OK",IDOK,174,240,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,228,240,50,14
+    PUSHBUTTON      "Save",IDC_PRESETSAVE_BUTTON,219,7,29,14
+    PUSHBUTTON      "Delete",IDC_PRESETDELETE_BUTTON,251,7,29,14,BS_ICON
+    LTEXT           "Presets",26,27,9,42,8
+    LTEXT           "Compression:",5,25,92,47,8
+    LTEXT           "Texture Type:",9,27,51,52,8
+    LTEXT           "Mip Maps:",22,27,198,43,8
+    LTEXT           "Pre-compress Normal Map Operations:",17,27,159,191,8
+    PUSHBUTTON      "?",IDC_COMPRESSION_HELP,7,89,16,14
+    PUSHBUTTON      "?",IDC_TEXTURETYPE_HELP,7,49,16,14
+    PUSHBUTTON      "?",IDC_PRECOMPRESS_HELP,7,156,16,14
+    PUSHBUTTON      "?",IDC_MIPMAP_HELP,7,195,16,14
+    LTEXT           "Context Info",IDC_COMPRESSION_HINT,27,105,251,20
+    LTEXT           "Context Info",IDC_TEXTURETYPE_HINT,27,64,251,20
+    LTEXT           "Context Info",IDC_MIPMAPS_HINT,27,211,251,20
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 225, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Intel® Texture Works"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Copyright © 2015, Intel Corporation.\nAll rights reserved.",26,10,10,205,18
+    DEFPUSHBUTTON   "OK",IDOK,86,37,52,16
+END
+
+IDD_PREVIEW DIALOGEX 0, 0, 585, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Preview"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,528,308,50,14
+    CTEXT           "",IDC_PREVIEWPROXY_ORIGINAL,7,28,282,263,NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    CTEXT           "ORIGINAL",IDC_PREVIEWPROXY_ORIGINALTEXT,7,11,282,8
+    CTEXT           "",IDC_PREVIEWPROXY_COMPRESSED,296,28,282,263,NOT WS_VISIBLE | WS_DISABLED | WS_BORDER
+    PUSHBUTTON      "",IDC_PREVIEWPROXY_ZOOMIN,307,309,13,13,BS_ICON
+    PUSHBUTTON      "",IDC_PREVIEWPROXY_ZOOMOUT,264,309,13,13,BS_ICON
+    LTEXT           "100%",IDC_PREVIEWPROXY_ZOOMTEXT,283,311,20,11
+    PUSHBUTTON      "1x",IDC_PREVIEWPROXY_ZOOM1X,478,309,13,13
+    PUSHBUTTON      "2x",IDC_PREVIEWPROXY_ZOOM2X,491,309,13,13
+    PUSHBUTTON      "4x",IDC_PREVIEWPROXY_ZOOM4X,504,309,13,13
+    PUSHBUTTON      "Fit",IDC_PREVIEWPROXY_ZOOMFIT,465,309,13,13
+    PUSHBUTTON      "1/2x",IDC_PREVIEWPROXY_ZOOMHALF,446,309,19,13
+    PUSHBUTTON      "1/4x",IDC_PREVIEWPROXY_ZOOMQUARTER,427,309,19,13
+    PUSHBUTTON      "RGB",IDC_PREVIEWPROXY_RGB,7,309,19,13
+    PUSHBUTTON      "R",IDC_PREVIEWPROXY_R,27,309,13,13
+    PUSHBUTTON      "G",IDC_PREVIEWPROXY_G,41,309,13,13
+    PUSHBUTTON      "B",IDC_PREVIEWPROXY_B,55,309,13,13
+    PUSHBUTTON      "A",IDC_PREVIEWPROXY_A,69,309,13,13
+    COMBOBOX        IDC_PREVIEWPROXY_COMBOBOX,410,8,168,30,CBS_DROPDOWNLIST | WS_TABSTOP
+    CTEXT           "120 kB",IDC_PREVIEWPROXY_TEXTSIZECOMPRESSED,296,295,282,8
+    CTEXT           "120 kB",IDC_PREVIEWPROXY_TEXTSIZEUNCOMPRESSED,7,295,282,8
+    CONTROL         "",IDC_EXPOSURE_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,87,310,73,12
+END
+
+IDD_GETNAME DIALOGEX 0, 0, 173, 26
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Preset Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME_EDIT,7,7,159,12,ES_AUTOHSCROLL
+END
+
+IDD_LOADDIALOG DIALOGEX 0, 0, 199, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Load Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,83,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,142,74,50,14
+    CONTROL         " Load mip-maps into separate layers.",IDC_LOADDIALOG_MIPMAPCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,51,137,10
+    GROUPBOX        "This File contains mip-maps. ",IDC_LOADDIALOG_MIPMAPGROUP,7,40,185,26,BS_LEFT
+    GROUPBOX        "This File contains Transparency",IDC_LOADDIALOG_ALPHAGROUP,7,7,185,27,BS_LEFT
+    CONTROL         " Load Transparency as Alpha channel",IDC_LOADDIALOG_ALPHACHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,18,135,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 15,0,0,0
+ PRODUCTVERSION 15,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Intel"
+            VALUE "FileDescription", "Intel® Texture Works"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "Intel® Texture Works"
+            VALUE "LegalCopyright", "Copyright© Intel Corporation. All rights reserved 2015"
+            VALUE "OriginalFilename", "IntelCompressionPlugin"
+            VALUE "ProductName", "Intel® Texture Works"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""IntelPlugin.pipl""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 281
+        VERTGUIDE, 6
+        VERTGUIDE, 27
+        VERTGUIDE, 79
+        VERTGUIDE, 278
+        HORZGUIDE, 7
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+    END
+
+    IDD_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 578
+        VERTGUIDE, 185
+        VERTGUIDE, 395
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_GETNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 19
+    END
+
+    IDD_LOADDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        VERTGUIDE, 27
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ZOOMOUTICON             ICON                    "zoomout.ico"
+ZOOMINICON              ICON                    "zoomin.ico"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "IntelPlugin.pipl"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
