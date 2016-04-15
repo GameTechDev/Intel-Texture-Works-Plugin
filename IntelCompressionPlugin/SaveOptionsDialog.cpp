@@ -173,7 +173,10 @@ void OptionsDialog::FillGlobalStruct()
 			case CompressionTypeEnum::BC4:globalParams->encoding_g = DXGI_FORMAT_BC4_UNORM;
 				globalParams->fast_bc67 = false;
 				break;
-			case CompressionTypeEnum::BC5:globalParams->encoding_g = DXGI_FORMAT_BC5_UNORM;
+			case CompressionTypeEnum::BC5_U:globalParams->encoding_g = DXGI_FORMAT_BC5_UNORM;
+				globalParams->fast_bc67 = false;
+				break;
+			case CompressionTypeEnum::BC5_S:globalParams->encoding_g = DXGI_FORMAT_BC5_SNORM;
 				globalParams->fast_bc67 = false;
 				break;
 			case CompressionTypeEnum::UNCOMPRESSED:globalParams->encoding_g = DXGI_FORMAT_R8G8B8A8_UNORM;
@@ -239,7 +242,10 @@ void OptionsDialog::GetGlobalStruct()
 			compressionID = CompressionTypeEnum::BC4;
 			break;
 		case DXGI_FORMAT_BC5_UNORM:
-			compressionID = CompressionTypeEnum::BC5;
+			compressionID = CompressionTypeEnum::BC5_U;
+			break;
+		case DXGI_FORMAT_BC5_SNORM:
+			compressionID = CompressionTypeEnum::BC5_S;
 			break;
 		case DXGI_FORMAT_R8G8B8A8_UNORM:
 			compressionID = CompressionTypeEnum::UNCOMPRESSED;
@@ -1089,7 +1095,7 @@ void OptionsDialog::GetCompressionNames(ComboData & comboItem)
 {
 	comboItem.itemAndContextStrings.clear();
 
-	//BC1, BC1_SRGB, BC3, BC3_SRGB, BC6H_FAST, BC6H_FINE, BC7_FAST, BC7_FINE, BC7_SRGB_FAST, BC7_SRGB_FINE, BC4, BC5, NONE
+	//BC1, BC1_SRGB, BC3, BC3_SRGB, BC6H_FAST, BC6H_FINE, BC7_FAST, BC7_FINE, BC7_SRGB_FAST, BC7_SRGB_FINE, BC4, BC5_U, BC5_S, NONE
 	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex,CompressionTypeEnum::BC1))
 	    comboItem.itemAndContextStrings.push_back(ComboItemAndContext("BC1   4bpp  (Linear)", "Also DXT1. Maximum compatibility. No Alpha Channel", CompressionTypeEnum::BC1));
 
@@ -1123,8 +1129,11 @@ void OptionsDialog::GetCompressionNames(ComboData & comboItem)
 	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex,CompressionTypeEnum::BC4))
 		comboItem.itemAndContextStrings.push_back(ComboItemAndContext("BC4   4bpp  (Linear, Grayscale)", "For Grayscale images, smallest size. Only the first image channel is used.", CompressionTypeEnum::BC4));
 	
-	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex,CompressionTypeEnum::BC5))
-		comboItem.itemAndContextStrings.push_back(ComboItemAndContext("BC5   8bpp  (Linear, 2 Channel tangent map)", "Use for Normalmap encoding. Best quality. Only the first two image channels are used.", CompressionTypeEnum::BC5));
+	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex,CompressionTypeEnum::BC5_U))
+		comboItem.itemAndContextStrings.push_back(ComboItemAndContext("BC5_U 8bpp  (Linear, Unsigned, 2 Channel tangent map)", "Use for Normalmap encoding. Best quality. Only the first two image channels are used.", CompressionTypeEnum::BC5_U));
+
+	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex, CompressionTypeEnum::BC5_S))
+		comboItem.itemAndContextStrings.push_back(ComboItemAndContext("BC5_S 8bpp  (Linear, Signed, 2 Channel tangent map)", "Use for Normalmap encoding. Best quality. Only the first two image channels are used.", CompressionTypeEnum::BC5_S));
 	
 	if (IntelPlugin::IsCombinationValid(mDialogData.TextureTypeIndex,CompressionTypeEnum::UNCOMPRESSED))
 		comboItem.itemAndContextStrings.push_back(ComboItemAndContext("none  32bpp", "Lossless, no compression applied.", CompressionTypeEnum::UNCOMPRESSED));

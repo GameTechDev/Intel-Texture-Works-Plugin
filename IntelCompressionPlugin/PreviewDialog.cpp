@@ -364,7 +364,7 @@ void PreviewDialog::FillCompressionCombo()
 {
 	compressionModesTable_.clear();
 
-	//BC1, BC1_SRGB, BC3, BC3_SRGB, BC6H_FAST, BC6H_FINE, BC7_FAST, BC7_FINE, BC7_SRGB_FAST, BC7_SRGB_FINE, BC4, BC5, NONE
+	//BC1, BC1_SRGB, BC3, BC3_SRGB, BC6H_FAST, BC6H_FINE, BC7_FAST, BC7_FINE, BC7_SRGB_FAST, BC7_SRGB_FINE, BC4, BC5_U, BC5_S, NONE
 	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex,CompressionTypeEnum::BC1))
 		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_BC1_UNORM, "BC1   4bpp  (Linear)", false));
 
@@ -398,9 +398,12 @@ void PreviewDialog::FillCompressionCombo()
 	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex,CompressionTypeEnum::BC4))
 		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_BC4_UNORM, "BC4   4bpp  (Linear, Grayscale)", false));
 	
-	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex,CompressionTypeEnum::BC5))
-		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_BC5_UNORM, "BC5   8bpp  (Linear, 2 Channel tangent map)", false));
-	
+	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex,CompressionTypeEnum::BC5_U))
+		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_BC5_UNORM, "BC5_U 8bpp  (Linear, Unsigned, 2 Channel tangent map)", false));
+
+	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex, CompressionTypeEnum::BC5_S))
+		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_BC5_SNORM, "BC5_S 8bpp  (Linear, Signed, 2 Channel tangent map)", false));
+
 	if (plugin->IsCombinationValid(globalParams->TextureTypeIndex,CompressionTypeEnum::UNCOMPRESSED))
 		compressionModesTable_.push_back(CompressModesStruct(DXGI_FORMAT_R8G8B8A8_UNORM, "none  32bpp", false));
 }

@@ -123,7 +123,8 @@ enum CompressionTypeEnum
 	BC7_SRGB_FAST, 
 	BC7_SRGB_FINE, 
 	BC4, 
-	BC5, 
+	BC5_U,
+	BC5_S,
 	UNCOMPRESSED, 
 	COMPRESSION_TYPE_COUNT
 };
