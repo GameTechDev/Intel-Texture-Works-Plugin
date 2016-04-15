@@ -36,12 +36,12 @@ bool IntelPlugin::IsCombinationValid(TextureTypeEnum textype, CompressionTypeEnu
 		//Rows are the TextureTypeEnum, and Columns the Compression types
 		bool CompressionVsTextureTypeMatrix[][CompressionTypeEnum::COMPRESSION_TYPE_COUNT] =
 		{ 
-		//   BC1,    BC1_SRGB,   BC3,    BC3_SRGB,   BC6H_FAST    BC6H_FINE   BC7_FAST   BC7_FINE   BC7_SRGB_FAST   BC7_SRGB_FINE   BC4     BC5     NONE
-			{true,   true,       false,  false,      true,        true,       true,      true,      true,           true,           true,   false,  true}, //COLOR
-			{false,  false,      true,   true,       false,       false,      true,      true,      true,           true,           false,  false,  true}, //COLOR+A
-			{true,   true,       true,   true,       true,        true,       true,      true,      true,           true,           false,  false,  true}, //CUBEMAP+LAYER
-			{true,   true,       true,   true,       true,        true,       true,      true,      true,           true,           false,  false,  true}, //CUBEMAP+CROSS
-			{false,   false,     false,  false,      false,       false,      false,     false,     false,          false,          false,  true,   true}, //NORMAL MAP
+		//   BC1,    BC1_SRGB,   BC3,    BC3_SRGB,   BC6H_FAST    BC6H_FINE   BC7_FAST   BC7_FINE   BC7_SRGB_FAST   BC7_SRGB_FINE   BC4     BC5_U   BC5_S   NONE
+			{true,   true,       false,  false,      true,        true,       true,      true,      true,           true,           true,   false,  false,  true}, //COLOR
+			{false,  false,      true,   true,       false,       false,      true,      true,      true,           true,           false,  false,  false,  true}, //COLOR+A
+			{true,   true,       true,   true,       true,        true,       true,      true,      true,           true,           false,  false,  false,  true}, //CUBEMAP+LAYER
+			{true,   true,       true,   true,       true,        true,       true,      true,      true,           true,           false,  false,  false,  true}, //CUBEMAP+CROSS
+			{false,   false,     false,  false,      false,       false,      false,     false,     false,          false,          false,  true,   true,   true}, //NORMAL MAP
 		};
 
 		return CompressionVsTextureTypeMatrix[textype][comptype];
@@ -103,7 +103,9 @@ bool IntelPlugin::CopyDataForEncoding(ScratchImage *scrUncompressedImageScratch_
 			return false;
 		}
 	}
-	else if (ps.data->encoding_g == DXGI_FORMAT_BC4_UNORM || ps.data->encoding_g == DXGI_FORMAT_BC5_UNORM)
+	else if (ps.data->encoding_g == DXGI_FORMAT_BC4_UNORM ||
+			 ps.data->encoding_g == DXGI_FORMAT_BC5_UNORM ||
+			 ps.data->encoding_g == DXGI_FORMAT_BC5_SNORM)
 	{
 		//Allocate space for one rgba 8bit image 
 		scrUncompressedImageScratch_->Initialize2D(DXGI_FORMAT_R8G8B8A8_UNORM, ps.formatRecord->imageSize.h, ps.formatRecord->imageSize.v, 1, 1, DDS_FLAGS_NONE);
@@ -175,7 +177,10 @@ bool IntelPlugin::CompressToScratchImage(ScratchImage **scrImageScratch_, Scratc
 	//============================================================================================
 	//Compress image, section
 	//ISPC is used for BC1,3,6,7. BC4,5 is done using DirectXTex Lib in one of the previous sections
-	if (ps.data->encoding_g != DXGI_FORMAT_BC4_UNORM && ps.data->encoding_g != DXGI_FORMAT_BC5_UNORM && ps.data->encoding_g !=DXGI_FORMAT_R8G8B8A8_UNORM)
+	if (ps.data->encoding_g != DXGI_FORMAT_BC4_UNORM &&
+		ps.data->encoding_g != DXGI_FORMAT_BC5_UNORM &&
+		ps.data->encoding_g != DXGI_FORMAT_BC5_SNORM &&
+		ps.data->encoding_g !=DXGI_FORMAT_R8G8B8A8_UNORM)
 	{
 		//How many mip levels are generated? If no mip map override this is 1 so that only one image is encoded
 		size_t mipLevels = (*scrUncompressedImageScratch_)->GetMetadata().mipLevels;
