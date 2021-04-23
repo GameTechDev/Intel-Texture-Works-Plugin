@@ -58,10 +58,11 @@ Use the [GitHub Issue Tracking System](https://github.com/GameTechDev/Intel-Text
 - Visual Studio 2012 (or possibly higher, although so far all builds created with 2012)
 - Photoshop CS6 SDK, can be obtained from here: http://www.adobe.com/devnet/photoshop/sdk.html
 - Adobe Photoshop 32 or 64 bit, CS6 or higher.
-
+- Intel® Implicit SPMD Program Compiler (https://github.com/ispc/ispc/releases)
 ## First time set-up ##
 
 - Install Photoshop CS6 SDK on developer machine
+- Copy ispc.exe to 3rdParty\Intel\Tools\ directory
 - Open IntelTextureTools solution 
 - Go to Property Manager and edit settings for Microsoft.Cpp.Win32.user and Microsoft.Cpp.x64.user, adding the following User Macro
 	PHOTOSHOP_SDK_CS6 = <full path to location of Photoshop CS6 SDK> 
